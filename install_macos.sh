@@ -4,11 +4,13 @@
 set -Eeuxo pipefail
 
 # Check if Homebrew is installed
-command -v brew &>/dev/null ||
+if ! command -v brew &>/dev/null; then
     # Install Homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &&
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
     # Disable analytics
     brew analytics off
+fi
 
 # Update Homebrew
 brew update
