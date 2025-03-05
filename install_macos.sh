@@ -16,7 +16,7 @@ fi
 brew update
 
 # Install packages
-brew bundle --no-lock --file=/dev/stdin <<EOF
+brew bundle --file=/dev/stdin <<EOF
 brew "stow"
 
 cask "cleanshot"
