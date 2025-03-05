@@ -46,4 +46,4 @@ EOF
 brew cleanup --prune=all
 
 # Symlink dotfiles to $HOME
-stow -Rvt $HOME macos
+stow -Rvt "$HOME" macos
