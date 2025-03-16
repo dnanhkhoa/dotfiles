@@ -34,12 +34,6 @@ cask "tableplus"
 cask "visual-studio-code"
 cask "vlc"
 cask "wezterm"
-
-mas "OneDrive", id: 823766827
-mas "Tailscale", id: 1475387142
-mas "Telegram", id: 747648890
-mas "Whisper Transcription", id: 1668083311
-mas "Yubico Authenticator", id: 1497506650
 EOF
 
 # Cleanup old packages
